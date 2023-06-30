@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">          
     <link rel="stylesheet" href="style.css">     
-    <link rel="stylesheet" href="reset.css">                                                    
+    <link rel="stylesheet" href="reset.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />                                                   
     <title>Document</title>
 </head>
 <body>
     <header class="cabecalho">
         <h1 class="cabecalho-titulo"> futebol</h1>
         <img class="cabecalho-imagem" src="coritiba.jpg" alt="coritiba">
-        <nav class="cabecalho-menu"> 
+        <span id="burguer" class="material-symbols-outlined"
+onclick="clickMenu()">menu</span>
+        <nav id="menu" class="cabecalho-menu"> 
             <ul>
                 <li> <a class="cabecalho-menu-item" href="#"> torcida </a></li>
                 <li> <a class="cabecalho-menu-item" href="#"> jogadores </a></li>
@@ -20,5 +23,15 @@
             </ul>
         </nav>     
     </header>
+    <script>
+
+        function clickMenu() {
+        if (menu.style.display == 'block') {
+        menu.style.display = 'none';
+        } else {
+        menu.style.display = 'block';
+        }
+        }
+        </script>
 </body>
 </html>
